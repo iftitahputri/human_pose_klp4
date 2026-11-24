@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Pose Estimation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main class="container">
+    <header>
+        <div class="logo">HPE</div>
+        <div>
+            <h1>Human Pose Estimation</h1>
+            <p>Live pose detection interface</p>
+        </div>
+        <span class="status"><span class="dot"></span>Server Online</span>
+    </header>
+
+    <section class="camera-panel">
+        <div class="camera-container">
+            <video id="camera" autoplay playsinline muted></video>
+            <img id="processed-frame" alt="Hasil pose estimation">
+            <div id="camera-placeholder" class="camera-placeholder">
+                <div class="camera-icon">📷</div>
+                <h2>Camera Preview</h2>
+                <p>Tekan Start Camera untuk memulai deteksi.</p>
+            </div>
+        </div>
+
+        <div class="camera-controls">
+            <button id="start-btn" class="btn-start">Start Camera</button>
+            <button id="switch-btn" class="btn-start" disabled>
+            Switch Camera
+            </button>
+            <button id="stop-btn" class="btn-stop" disabled>Stop Camera</button>
+        </div>
+        <p id="camera-status" class="camera-status">Kamera belum aktif.</p>
+    </section>
+
+    <section class="info-grid">
+        <article class="info-card">
+            <span class="label">Detected Pose</span>
+            <strong id="pose">—</strong>
+        </article>
+        <article class="info-card">
+            <span class="label">People Detected</span>
+            <strong id="people">0</strong>
+        </article>
+        <article class="info-card">
+            <span class="label">Processing FPS</span>
+            <strong id="fps">—</strong>
+        </article>
+    </section>
+
+    <footer><p>Processing: Laptop · Camera & Interface: HP Browser</p></footer>
+</main>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
