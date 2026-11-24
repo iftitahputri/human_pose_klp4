@@ -1,6 +1,6 @@
 # Human Pose Estimation
 
-Aplikasi **Human Pose Estimation** berbasis web untuk mendeteksi dan mengklasifikasikan gerakan tubuh manusia secara real-time menggunakan kamera perangkat. Sistem memanfaatkan MediaPipe Pose Landmarker untuk mendeteksi landmark tubuh, OpenCV untuk pengolahan frame dan visualisasi skeleton, serta Flask sebagai backend pemrosesan.
+Aplikasi Human Pose Estimation berbasis web untuk mendeteksi dan mengklasifikasikan gerakan tubuh manusia secara real-time menggunakan kamera perangkat. Sistem memanfaatkan MediaPipe Pose Landmarker untuk mendeteksi landmark tubuh, OpenCV untuk pengolahan frame dan visualisasi skeleton, serta Flask sebagai backend pemrosesan.
 
 Kamera diakses melalui browser pada perangkat pengguna (misalnya HP), sedangkan proses deteksi dan klasifikasi dilakukan pada laptop yang menjalankan server Flask.
 
