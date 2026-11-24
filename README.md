@@ -48,7 +48,7 @@ Sebelum menjalankan aplikasi, pastikan perangkat sudah memiliki:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/USERNAME/human_pose_klp4.git
+git clone https://github.com/iftitahputri/human_pose_klp4.git
 ```
 
 Masuk ke direktori proyek:
